@@ -1,0 +1,19 @@
+1、
+	继承Thread类、实现Runnable接口、使用ExecutorService、Callable、Future实现有返回结果的多线程。
+	其中前两种方式线程执行完后都没有返回值，只有最后一种是带返回值的。
+2、
+	使用关键字synchronized
+		可以修饰方法或修饰需要同步的程序
+			例:public synchronized void run() {}
+				synchronized (this) {
+					同步程序
+				}
+3、
+	List是顺序存放对象的，可以有相同的对象，通过索引存取,能直接使用数组的时候，就有使用列表
+	Set是无序存放对象的，其中不能有重复的对象,用于存放无序的（指顺序不重要）不能重复的对象
+	May存放的是键与值的映射，其中键是唯一的（不能有重复对象），而值可以有重复的对象,用于存放具有对应关系的键值对
+4、
+	HashTable和ConcurrentHashMap是线程安全的,HashMap不是线程安全的
+	ConcurrentHashMap比HashMap多出了一个类Segment
+	HashMap效率高,非线程安全,准许null键值(key)
+	HashTable和HashMap都实现了Map接口

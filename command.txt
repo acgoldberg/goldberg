@@ -1,0 +1,3 @@
+mvn exec:java -Dexec.mainClass="hand.achao.Two"
+mvn exec:java -Dexec.mainClass="hand.achao.Three"
+mvn exec:java -Dexec.mainClass="hand.achao.Flour"
